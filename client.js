@@ -17,9 +17,9 @@ const connect = function() {
     console.log('Successfully connected');
     conn.write('Name: SNK');
   });
-  conn.on('connect', (server) => {
+  conn.on('connect', () => {
     console.log('New client connected!');
-    conn.write('Hello there!');
+    conn.write('Say: hello there!');
   });
 
   return conn;
